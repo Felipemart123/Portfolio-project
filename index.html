@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- Additional CSS must be placed after Bootstrap CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>To do Organizer</title>
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <img id="backgroundImage" src="" alt="" class="img-fluid">
+          <div class="col-4 col-sm-3 col-md-2 align-self-center">
+            <a href="aboutus.html"><img src="" class="img-fluid" /></a>
+          </div>
+          <div class="col">
+            <h1>My Organizer</h1>
+            <h2>Do more with My Organizer</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <div class="container">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#todoNavbar">
+              <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="todoNavbar">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i>
+                          About</a>
+                  </li>
+                  
+                  <li class="nav-item"><a class="nav-link" href="https://www.nucamp.co/" target="_blank"
+                              class="fa fa-address-card fa-lg"></i>
+                          Contact</a></li>
+              </ul>
+              <span class="navbar-text ml-auto">
+                  <a role="button" data-toggle="modal" data-target="#loginButton">
+                      <i class="fa fa-sign-in"></i> Login
+                  </a>
+              </span>
+          </div>
+      </div>
+  </nav>
+
+  <div class="row">
+    <div class="col-lg-5 mx-auto">
+
+        <!-- CHECKBOX LIST -->
+        <div class="card rounded border-0 shadow-sm position-relative">
+            <div class="card-body p-5">
+                <div class="d-flex align-items-center mb-4 pb-4 border-bottom"><i class="far fa-calendar-alt fa-3x"></i>
+                    <div class="ms-3">
+                        <h4 class="text-uppercase fw-weight-bold mb-0">To do list</h4>
+                        <p class="text-gray fst-italic mb-0">March 15 2022</p>
+                    </div>
+                </div>
+                <div id="myDIV" class="header">
+                  
+                  <input type="text" id="myInput" placeholder="Title...">
+                  <button type="button"> Add </button>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input todo-input" id="flexCheck1" type="checkbox" checked>
+                    <label class="form-check-label" for="flexCheck1"><span class="fst-italic pl-1">Buy a new sweatshirt</span></label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input todo-input" id="flexChec2" type="checkbox">
+                    <label class="form-check-label" for="flexChec2"><span class="fst-italic pl-1">Try not to fall asleep</span></label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input todo-input" id="flexCheck3" type="checkbox">
+                    <label class="form-check-label" for="flexCheck3"><span class="fst-italic pl-1">Begin QA for the product</span></label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input todo-input" id="flexCheck4" type="checkbox">
+                    <label class="form-check-label" for="flexCheck4"><span class="fst-italic pl-1">Go for a long walk</span></label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input todo-input" id="flexCheck5" type="checkbox">
+                    <label class="form-check-label" for="flexCheck5"><span class="fst-italic pl-1">Pay for the new shoppings</span></label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input todo-input" id="flexCheck6" type="checkbox">
+                    <label class="form-check-label" for="flexCheck6"><span class="fst-italic pl-1">Buy a new sweatshirt</span></label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input todo-input" id="flexCheck7" type="checkbox">
+                    <label class="form-check-label" for="flexCheck7"><span class="fst-italic pl-1">Go for a long walk</span></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+      
+
+    <div id="loginButton" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title">Login</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <div class="container-fluid">
+                      <form>
+                          <div class="form-row">
+                              <div class="form-group col-12">
+                                  <label class="sr-only" for="loginEmail">Email address</label>
+                                  <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                      placeholder="Enter email">
+                              </div>
+                              <div class="form-group col-12">
+                                  <label class="sr-only" for="loginPassword">Password</label>
+                                  <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                      placeholder="Password">
+                              </div>
+                              <div class="col">
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox">
+                                      <label class="form-check-label"> Remember me</label>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-row">
+                              <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                  data-dismiss="modal">Cancel</button>
+                              <button type="submit" class="btn btn-primary btn-sm ml-1">search</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+    <footer class="site-footer">
+      <div class="container">
+          <div class="row row-content">
+              <div class="col-4 col-sm-2 text-center">
+                  <h5>Links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="aboutus.html">About</a></li>
+                     
+                      <li><a href="https://www.nucamp.co/" target="_blank" >Contact</a></li>
+                  </ul>
+              </div>
+              <div class="col-6 col-sm-5 text-center">
+                  <h5>Social</h5>
+                  <ul>
+                    <a href="https://twitter.com/kanyewest"target="_blank"></i> Twitter</a>
+                    <a href="https://codepen.io/felipemart123" target="_blank">Codepen</a>
+                    <a href="https://github.com/" target="_blank">Github</a>
+                      <p>👋</p>
+                    
+                  </ul>
+              </div>
+              <div class="col-sm-4">
+                  <i class="fa fa-phone fa-lg text-primary"></i> 786-514-5754<br />
+                  <i class="fa fa-envelope fa-lg text-primary"></i> felipemart1876@gmail.com
+              </div>
+          </div>
+        </div>
+    </footer>
+
+
+    
+
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./javascript/script.js"></script>
+    </body>
+
+    </html>
